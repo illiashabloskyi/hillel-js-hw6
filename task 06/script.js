@@ -36,6 +36,8 @@ if (mul > 100) {
 
 if (isNaN(a) || a === "" || a === null) {
   alert("Щось пішло не так");
+}else if (a < 100 || a > 1000){
+  alert("Ви ввели не тризначне число");
 }else{
   alert(`${firstMassage}\n${secondMassage}\n${lastMassage}`);
 }

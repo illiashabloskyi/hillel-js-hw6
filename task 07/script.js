@@ -24,7 +24,10 @@ if (firstNumber === secondNumber || firstNumber === lastNumber || lastNumber ===
 
 if (isNaN(a) || a === "" || a === null) {
   alert("Щось пішло не так");
-}else{
+}else if (a < 100 || a > 1000){
+  alert("Ви ввели не тризначне число");
+}
+else{
   alert(`${firstMassage}\n${lastMassage}`)
 }
 

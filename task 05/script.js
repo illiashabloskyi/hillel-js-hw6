@@ -5,7 +5,9 @@ let lastNumber = a % 10;
 
 if (isNaN(a) || a === "" || a === null) {
   alert("Щось пішло не так");
-} else if (firstNumber > lastNumber) {
+}else if (a < 10 || a > 100){
+  alert("Ви ввели не двозначне число");
+}else if (firstNumber > lastNumber) {
   alert(`Цифра ${firstNumber} більша за цифру ${lastNumber}`);
 } else if (lastNumber > firstNumber) {
   alert(`Цифра ${lastNumber} більша за цифру ${firstNumber}`);
