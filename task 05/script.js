@@ -1,5 +1,5 @@
 // Дано двозначне число. Визначити, яка з його цифр більша: перша чи друга?
-let a = parseInt(prompt("Введіть число:"));
+let a = parseInt(prompt("Введіть двозначне число:"));
 let firstNumber = Math.floor(a / 10);
 let lastNumber = a % 10;
 
