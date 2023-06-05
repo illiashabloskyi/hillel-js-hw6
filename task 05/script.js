@@ -1,7 +1,7 @@
 // Дано двозначне число. Визначити, яка з його цифр більша: перша чи друга?
-a = parseInt(prompt("Введіть число:"));
-firstNumber = Math.floor(a / 10);
-lastNumber = a % 10;
+let a = parseInt(prompt("Введіть число:"));
+let firstNumber = Math.floor(a / 10);
+let lastNumber = a % 10;
 
 if (isNaN(a) || a === "" || a === null) {
   alert("Щось пішло не так");
