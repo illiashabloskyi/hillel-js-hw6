@@ -4,10 +4,8 @@ let a = parseInt(prompt("Введіть перше число:"));
 let b = parseInt(prompt("Введіть друге число:"));
 
 
-if (isNaN(a) || a === "" || a === null) {
-  alert("Введіть перше число");
-} else if (isNaN(b) || b === "" || b === null) {
-  alert("Введіть друге число");
+if (isNaN(a) || a === "" || a === null || isNaN(b) || b === "" || b === null) {
+  alert("Щось пішло не так");
 }else if (a % b === 0 && b % a === 0){
   alert(`Числа є дільниками одне одного`)
 }else if(a % b === 0){

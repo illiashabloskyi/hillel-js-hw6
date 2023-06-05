@@ -6,10 +6,8 @@ let b = parseFloat(prompt("Введіть відстань у футах:"));
 kmOnM = a * 1000;
 fOnM = b * 0.305;
 
-if (isNaN(a) || a === "" || a === null) {
-  alert("Введіть відстань у км в цифрах");
-} else if (isNaN(b) || b === "" || b === null) {
-  alert("Введіть відстань у футах в цифрах");
+if (isNaN(a) || a === "" || a === null || isNaN(b) || b === "" || b === null) {
+  alert("Щось пішло не так");
 } else if (kmOnM < fOnM) {
   alert(`Відстань у км менше ніж футах`);
 } else if (fOnM < kmOnM) {
