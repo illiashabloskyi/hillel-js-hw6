@@ -2,7 +2,7 @@
 
 let a = parseInt(prompt("Введіть перше число:"));
 let b = parseInt(prompt("Введіть друге число:"));
-console.log(typeof a)
+
 
 if (isNaN(a) || a === "" || a === null) {
   alert("Введіть перше число");
