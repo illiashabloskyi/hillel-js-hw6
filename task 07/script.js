@@ -3,16 +3,28 @@
 // Чи є серед цифр цифри однакові?
 let a = parseInt(prompt("Введіть тризначне число:"));
 
-if (isNaN(a) || a === "" || a === null) {
-  alert("Щось пішло не так");
-}
-
 let firstNumber = Math.floor(a / 100);
 let secondNumber = Math.floor((a / 10) % 10);
 let lastNumber = a % 10;
 
-let sum = firstNumber + secondNumber + lastNumber;
-let mul = firstNumber * secondNumber * lastNumber;
-
 let firstMassage;
-let secondMassage;
+let lastMassage;
+
+if (firstNumber === secondNumber && firstNumber === lastNumber){
+  firstMassage = "Всі цифри однакові"
+}else{
+  firstMassage = "Не всі цифри однакові"
+}
+
+if (firstNumber === secondNumber || firstNumber === lastNumber || lastNumber === secondNumber){
+  lastMassage = "Є однакові цифри"
+}else{
+  lastMassage = "Однакових цифр немає"
+}
+
+if (isNaN(a) || a === "" || a === null) {
+  alert("Щось пішло не так");
+}else{
+  alert(`${firstMassage}\n${lastMassage}`)
+}
+
